@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 标签选择器 */
+    div{
+        color: brown;
+        text-align: center;
+    }
+    /* 标签选择器 */
+    
+    h1{
+        color: blue;
+
+    }
+    /* 类选择器 */
+    .kuzen{
+        color: beige;
+  
+    }
+    /* 后代选择器 */
+    div h1.kuzen{
+        color: red;
+        color: antiquewhite;
+        font-size: 70px;
+        background-color: aqua;
+        
+    }
+        </style> 
+</head>
+<body>
+    <div><h1 class="kuzen">我嘞个烧缸</h1></div>
+</body>
+</html>
+<!-- 
+ 1.先解析html树然后解析css树(调用浏览器默认样式,这个时候元素的每一个样式都有了默认属性)
+ 2.通过css选择器修改默认样式
+ 3.多个选择器定义同一元素样式,根据计算机的优先级
+ 4.同一选择器定义同一属性,后面的优先级更高
+ 5.如果子选择器没有定义样式的属性,可以在父选择器定义的样式中选择可以继承的属性进行继承.
+
+
+-->
